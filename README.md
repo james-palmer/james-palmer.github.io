@@ -1,2 +1,0 @@
-# meetjp
-Personal website
