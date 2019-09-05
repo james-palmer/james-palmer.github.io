@@ -5,7 +5,7 @@
 body {
   font: 100% sans-serif;
   margin: 0em;
-  background-color: #fff;
+  background-color: #f3f4f5;
   color: #666;
 }
 
@@ -38,6 +38,12 @@ img {
   max-width: 100%;
 }
 
+.right-backround-img{
+  position: absolute;
+  top:0px;
+  right; 0px;  
+}
+
 hr {
   border-top: 1px solid #ccc;
   border-bottom: none;
@@ -46,17 +52,21 @@ hr {
 }
 
 header {
-  background-color: #999;
-  background-image: url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fbackground.jpg?v=1567383799647);
+  background-color: #343A40;
+  background-image: url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fbright-bulb-dark-132340.jpg?v=1567395796285);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 4em;
+  margin-bottom: ;
   text-align: center;
   height: 500px;
+ }
+
+.navbar {
+ border-style:outset; 
  
 }
 
@@ -73,7 +83,7 @@ header h1 {
 }
 
 header p {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.1em;
   padding-bottom: 1.3em;
   padding-top: .5em;
@@ -112,15 +122,16 @@ footer hr {
 @media screen and (min-width: 50em) {
   header {
     height: 700px;
+    top:80%;
   }
   
   header h1 {
     font-size: 3.2em;
-    top: 540px;
+    top: 80%;
   }
   
   header p {
-    top: 530px;
+    top: 80%;
     font-size: 1.5em;
   }
 }
@@ -184,32 +195,79 @@ footer hr {
 
 /* -------------------Custom Blocks----------------- */
 
-/* Gallery */
 
-.gallery [class*="grid-2"], .gallery [class*="grid-3"]  {
-  margin-bottom: 1%;
-  margin-top: 1%;
-  width: 50%;
+/* Introduction */
+.introduction {
+padding: 3em 1em;
+  min-height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) 90% ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
+  background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%,cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;  
+  color:#FFFFFF;
+  }
+
+.introduction [class*="row"] {
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-.gallery a img {
-  -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
-  transition: opacity .2s ease;
-  opacity: 1;
+.introduction h2 {
+  margin-bottom: 0;
 }
 
-.gallery a img:hover {
-  opacity: .8;
+.introduction h2, .experience p {
+  text-align: center;
 }
 
-@media screen and (min-width: 40em) {
-  .gallery .grid-2 {
-    width: 33.3333333%;
+.introduction [class*="row"]:last-of-type {
+  border: none;
+}
+
+@media only screen and (min-width: 768px){
+  
+  .introduction {
+  vertical-align: middle;
+  background: linear-gradient(to right, #FFFFFF, #343a40 550px), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
+  background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%,contain;
+  background-blend-mode: darken;
+  background-attachment: fixed;  
+  }
+  
+  .introduction h2, .introduction p {
+    text-align: center;
+    
   }
 }
 
 
+
+
 /* Experience */
+.experience {
+  padding: 3em 1em;
+  min-height: 100vh;
+  vertical-align: middle;
+  text-align: center;
+  background-color:#606b76;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fblur-chart-data-159888%20Flip.jpg?v=1567465397294);
+  background-position: top right;
+  background-repeat: no-repeat;
+   background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  color:#FFFFFF
+}
+
 .experience [class*="row"] {
   border-bottom: dotted 1px #ccc;
   padding-top: 1em;
@@ -230,155 +288,192 @@ footer hr {
 
 @media screen and (min-width: 40em) {
   .experience h2, .experience p {
-    text-align: left;
+    text-align: center;
   }
 }
 
 
 /* Education Block */
+
+
+
 .education {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
-  margin-bottom: 0;
-  text-align: center;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 40em) {
-  .education {
-    width: 70%;
-  }
-}
-
-
-/* Testimonials */
-.testimonial {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.testimonial img {
-  height: 4em;
-  border-radius: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 40px;
-}
-
-.testimonial p {
-  font-style: italic;
-  color: #888;
-  margin-top:  -15px;
-}
-
-/* Spotlight */
-.spotlight {
-  background-color: #f3e2d8;
   padding: 3em 1em;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  vertical-align: middle;
+  text-align: center;
+  min-height: 100vh;
+  background-color:#dee1e4;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FLSE%20Graduation.jpg?v=1567488814669);
+  background-position: top;
+  background-repeat: no-repeat;
+   background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  color:#FFFFFF
+  }
+
+.education [class*="row"] {
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.education h2 {
+  margin-bottom: 0;
+}
+
+.education h2, .education p {
   text-align: center;
 }
 
-.spotlight img {
-  width: 60%;
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.spotlight h1 {
-  color: #e4382c;
-}
-
-.spotlight p {
-  color: #6d5e53;
-  font-size: 1.1em;
-}
-
-.spotlight a {
-  background-color: transparent;
-  border: 3px solid #e4382c;
-  padding: 7px 35px;
-  border-radius: 3px;
-  color: #e4382c;
-  font-size: 1.1em;
-  opacity: .8;
-  margin-bottom: 10px;
-}
-
-.spotlight a:hover {
-  opacity: 1;
-  cursor: pointer;
+.education [class*="row"]:last-of-type {
+  border: none;
 }
 
 @media screen and (min-width: 40em) {
-  .spotlight {
-    padding: 6em;
-    text-align: left;
+  .education h2, .education p {
+    text-align: center;
   }
-  
-  .spotlight h1, .spotlight p {
-    text-align: left;
+}
+
+.role {
+  color:#FFFFFF
+  content  
+}
+
+
+
+/* interests Block */
+
+.interests {
+  min-height: 100vh;
+  padding: 5em 1em;
+  text-align: center;
+  vertical-align: middle;
+  background-color:#f3f4f5;
+}
+
+.interests [class*="row"] {
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.interests h2 {
+  margin-bottom: 0;
+}
+
+.interests h2, .interests p {
+  text-align: center;
+}
+
+.interests [class*="row"]:last-of-type {
+  border: none;
+}
+
+@media screen and (min-width: 40em) {
+  .interests h2, .interests p {
+    text-align: center;
   }
+}
+
+
+.read-more {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.read-more p.collapse:not(.show) {
+    height: 42px !important;
+    overflow: hidden;
   
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 
-.fa-linkedin {
+.read-more p.collapsing {
+    min-height: 42px !important;
+}
+
+.read-more a.collapsed:after  {
+    content: '+ Read More';
+}
+
+.read-more a:not(.collapsed):after {
+    content: '- Read Less';
+}
+
+
+.fa-linkedin:hover {
+  border: .5px solid #006097;
+    background: #006097;
+    background-position: left bottom;
+    background-position-x: left;
+    background-position-y: bottom;
+    color: #fff!important;
+    transition: all 0.8s ease;
+}
+
+.fa-envelope:hover {
+      border: .5px solid #008744;
+    background: #008744;
+    background-position: left bottom;
+    background-position-x: left;
+    background-position-y: bottom;
+    color: #fff!important;
+  transition: all 0.8s ease;
+  }
+
+
+.fa-file:hover{
+      border: .5px solid #ff7070;
+    background: #ff7070;
+    background-position: left bottom;
+    background-position-x: left;
+    background-position-y: bottom;
+    color: #fff!important;
+    transition: all 0.8s ease;
+}
+
+.fa-github:hover{
+      border: .5px solid black;
+    background: black;
+    background-position: left bottom;
+    background-position-x: left;
+    background-position-y: bottom;
+    color: #fff!important;
+    transition: all 0.8s ease;
+}
+
+
+.intro{
   padding: 20px;
   font-size: 30px;
   width: 60px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  background:#007bb5;
   color: white;
-}
-
-.fa-gmail {
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background:#007bb5;
-  color: white;
-}
-
-.fa-envelope {
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background:#008744;
-  color: white;
-}
-
-.fa-github{
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background:black;
-  color: white;
-}
-
-.fa-file-download{
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background:black;
-  color: white;
+  margin-left: 10px;
+  border: .5px solid #cfd1d1;
+    border-top-color: rgb(207, 209, 209);
+    border-top-style: solid;
+    border-top-width: 0.5px;
+    border-right-color: rgb(207, 209, 209);
+    border-right-style: solid;
+    border-right-width: 0.5px;
+    border-bottom-color: rgb(207, 209, 209);
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-left-color: rgb(207, 209, 209);
+    border-left-style: solid;
+    border-left-width: 0.5px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;  
 }
 
 .mini {
@@ -388,9 +483,6 @@ footer hr {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-}
-.pdf-download {
-    position: fixed;
-    top: 1.5em;
-    right: 1.5em;
+  color: black;
+  margin-left: 5px;
 }
