@@ -44,11 +44,12 @@
 https://alan-luo.github.io/cv-template/
 -->
 
-  <header style="height: 100vh">
-		<h1>James Palmer</h1>
-		<p>Strategy and Innovation</p>
-   
-	</header>
+   <div class="front">
+     <h1>James Palmer</h1>
+    <p>Strategy and Innovation</p> 
+    <div class="chevron"></div>
+  </div>
+    
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
   <a class="navbar-brand" href="#">James Palmer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -66,23 +67,27 @@ https://alan-luo.github.io/cv-template/
 </nav>
   
   <!-- Intro -->
-	<section class="introduction anchor" id="introduction" >
+	<section class="introduction anchor" style="vertical-align:middle" id="introduction" >
 		<div class="container">
-      <div class="row">   
-			 <p>
+      <div class="row"> 
+        <div class ="col d-none d-md-block">
+        </div>
+        <div class="col">
+          <p>
         I am an innovative professional with a diverse skill set spanning product management, data analytics, relationship management and process improvement. 
-        <br><br>
+          </p><p>
         I have demonstrated success in multiple industries, illustrating a passion for learning and developing new skills with a reputation for exceeding expectations.
 			</p>
       <div class="row" style=" display: inline-block; width: 100%;">
           <a href="https://www.linkedin.com/in/j-palmer/" class="intro fa fa-linkedin"></a>
           <a href="mailto:james.palms@gmail.com?subject=Introduction - James Palmer" class="intro fa fa-envelope"></a>
-          <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="intro fa fa-file"></a>
+          <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="intro pdf">PDF</a>
         
       </div>
         
       </div>
 			</div>
+    </div>
   </section>
  
 
@@ -98,22 +103,28 @@ https://alan-luo.github.io/cv-template/
           <p>Apr. 2019 - present</p>
 				</div>
 				<div class="grid-4 left">
-					<h6>
-              JCDecaux is the number one outdoor advertising company worldwide, delivering high-quality and innovative advertising solutions. 
-            </h6>
-						Report to COO as the Australia and New Zealand lead on new strategy and innovation projects. Identifying roadmap, collaborating internally to deliver projects and establish JCDecaux leading innovative brand image.
-              <br>
-              <a href="#jCDecauxShowMore" data-toggle="collapse">Show details</a>
-          <div id="jCDecauxShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+					<h6>JCDecaux is the number one outdoor advertising company worldwide, delivering high-quality and innovative advertising solutions. </h6>
+					<p>Report to COO as the Australia and New Zealand lead on new strategy and innovation projects. Identifying roadmap, collaborating internally to deliver projects and establish JCDecaux leading innovative brand image.</p>	
+              <br><br>
+        
+          <!-- JCD DETAILS-->
+          <div class="wrap-collabsible-JCD">
+            <input id="collapsible-JCD" class="toggle-JCD" type="checkbox">
+            <label for="collapsible-JCD" class="lbl-toggle-JCD">Role Details</label>
+            <div class="collapsible-content-JCD">
+              <div class="content-inner-JCD">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul> 
-				</div>
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>         
+             
 			</div>
       </div>    
     <br>
@@ -124,53 +135,71 @@ https://alan-luo.github.io/cv-template/
           <p>Apr. 2012 - Jul 2018</p>
 				</div>
 				<div class="grid-4 left">
-					<h6>
-              EquiLend is an industry owned Financial Technology Company that provides trading, post-trade and market data services to borrowers, lenders and beneficial owners within the securities finance industry
-            </h6>
-						I held multiple roles across the business since joining in 2012. Moving from Sales to establishing a new business revenue stream acting as the global product owner to a product specialist for the market data arm, DataLend.              <br>
- 
-          <br>
-          <!--DataLend-->
-          <a class="role" href="#dataLendShowMore" data-toggle="collapse">DATALEND - PRODUCT SPECIALIST</a>
-                <div id="dataLendShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+					<h6>EquiLend is an industry owned Financial Technology Company that provides trading, post-trade and market data services to borrowers, lenders and beneficial owners within the securities finance industry</h6>
+          <p>I held multiple roles across the business since joining in 2012. Moving from Sales to establishing a new business revenue stream acting as the global product owner to a product specialist for the market data arm, DataLend.</p>              
+          <br><br>
+            <!-- DataLend DETAILS-->
+          <div class="wrap-collabsible-DL">
+            <input id="collapsible-DL" class="toggle-DL" type="checkbox">
+            <label for="collapsible-DL" class="lbl-toggle-DL">DataLend - Product Specialist</label>
+            <div class="collapsible-content-DL">
+              <div class="content-inner-DL">
+                <h6>Feb. 2017 - Jul 2018</h6>
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul>                
-				</div>
-          
-          <br>
-          <!--Swaps-->
-          <a class="role" href="#swapLendShowMore" data-toggle="collapse">SWAPS - GLOBAL PRODUCT OWNER</a>
-                <div id="swapLendShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+                  <li>Team lead for EMEA and APAC DataLend product specialists</li>
+                  <li>Joint project manager for new analytics business launched in May 2018, <span href="https://datalend.com/services/the-pulse-precision-analytics-powered-by-datalend/">“The Pulse”</span>, offering a data dashboard to provide new insights into client data. <br>Responsible for data analysis, UI design, database testing and demonstrations</li>
+                  <li>Established as the key industry commentator for DataLend in Europe, including:
+                        <ul>
+                          <li>Panelist at the London 2018 Tech Symposium “Data - the fuel for automation”</li>
+                          <li>Keynote presenter on “The importance of Data” at 2017 Finadium conference</li>
+                          <li>Contributor to bi-annual DataLend Research publication, “The Purple”</li>
+                       </ul>
+                    <li>Managed relationships for 37 clients across EMEA, engaging existing and prospective users, promoting new enhancements and gathering feedback.</li>
+                    <li>Certified ScrumMaster for the DataLend development team</li>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+          </div>      
+
+                      <!-- SW Swaps DETAILS-->
+          <div class="wrap-collabsible-SW">
+            <input id="collapsible-SW" class="toggle-SW" type="checkbox">
+            <label for="collapsible-SW" class="lbl-toggle-SW">SWAPS - GLOBAL PRODUCT OWNER</label>
+            <div class="collapsible-content-SW">
+              <div class="content-inner-SW">
+              <h6>Jul. 2015 - Feb. 2017</h6>
+               Pioneered a new revenue stream to build a new matching algorithm and trading platform to propose and agree bilateral security based Total Return Swaps.
+              <br>Responsibilities included:
+                <ul>           
+                  <li>Product strategy and ownership of the roadmap and backlog</li>
+                  <li>Detailed requirements gathering and business analysis</li>
+                  <li>Leading a team of developers through iterative releases of the product</li>
+                  <li>Global relationship management with end users to promote usage</li>  
+                </ul>
+                Executed over USD $8 billion in Total Return Swap during the 8 months the product was live
+                <br>Revenue generated of $200k USD in 2015 and $450k USD in 2016.
+              </div>
+            </div>
+          </div>      
+
+                            <!-- EQUILEND DETAILS-->
+          <div class="wrap-collabsible-EL">
+            <input id="collapsible-EL" class="toggle-EL" type="checkbox">
+            <label for="collapsible-EL" class="lbl-toggle-EL">EQUILEND - SALES</label>
+            <div class="collapsible-content-EL">
+              <div class="content-inner-EL">
+                <h6>Apr. 2012 - Jul. 2015</h6>
+                Sales and relationship manager, responsible for client relationships in Switzerland, South Africa, the Netherlands and UK across the market data, trading and post-trade product suite
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul>                
-				</div>
-          
-          <br>
-          <!--EquiLend-->
-          <a class="role" href="#equiLendShowMore" data-toggle="collapse">EQUILEND - SALES</a>
-                <div id="equiLendShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
-                <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul>                
-				</div>
-          
+                  <li>Trade Optimization algorithmic trading product subject matter expert</li>
+                  <li>Led and developed new business opportunities with South African client base, rolling out a market wide data initiative</li>
+                  <li>Incremental revenue from new clients equal to $700k USD in 2014</li>
+                  <li>Implemented tactical analytical tools that were leveraged by the global Sales and Relationship Management team</li>
+                </ul>
+              </div>
+            </div>
+          </div>  
           
 			</div>
   </div>
@@ -183,22 +212,29 @@ https://alan-luo.github.io/cv-template/
           <p>Summer Internship 2010</p>
 				</div>
 				<div class="grid-4 left">
-					<h6>
-          Lehman Brothers was.... 
-          </h6>
-          <p>History</p>
-          <a class="read-more collapsed" href="#lehmanShowMore" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSummary">+ read more</a>
-         <div id="lehmanShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+					<h6>Lehman Brothers was the 4th largest US investment bank before declaring bankruptcy in 2008.  </h6>
+          <p>I joined the ongoing administration to assist the reconciliation and valuation of open trade positions with creditors and debtors.</p>
+          
+          <!-- LEHMAN BROTHERS DETAILS-->
+          <div class="wrap-collabsible-LB">
+            <input id="collapsible-LB" class="toggle-LB" type="checkbox">
+            <label for="collapsible-LB" class="lbl-toggle-LB">ROLE DETAILS</label>
+            <div class="collapsible-content-LB">
+              <div class="content-inner-LB">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul> 
-				</div>
-			</div>
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li>
+                  Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>  
+
+		</div>
   </div>      
         
   </div>
@@ -249,14 +285,15 @@ https://alan-luo.github.io/cv-template/
       <div class = "col">
         <a href="https://www.linkedin.com/in/j-palmer/" class="fa mini fa-linkedin"></a>
         <a href="mailto:james.palms@gmail.com?subject=Introduction - James Palmer" class="fa mini fa-envelope"></a>
-        <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="mini fa fa-file"></a>
         <a href="" class="fa mini fa-github"></a>
-        </div>
+        <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="mini pdf fa fa-file"></a>
+      </div>
         
         <div class="col-5" style="text-align: right" >
           
         <a>&copy; James Palmer 2019</a>
         </div>  
+      </div>
       </div>
 
 		</footer>
