@@ -44,11 +44,12 @@
 https://alan-luo.github.io/cv-template/
 -->
 
-  <header style="height: 100vh">
-		<h1>James Palmer</h1>
-		<p>Strategy and Innovation</p>
-   
-	</header>
+   <div class="front">
+     <h1>James Palmer</h1>
+    <p>Strategy and Innovation</p> 
+    <div class="chevron"></div>
+  </div>
+    
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
   <a class="navbar-brand" href="#">James Palmer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -77,7 +78,7 @@ https://alan-luo.github.io/cv-template/
       <div class="row" style=" display: inline-block; width: 100%;">
           <a href="https://www.linkedin.com/in/j-palmer/" class="intro fa fa-linkedin"></a>
           <a href="mailto:james.palms@gmail.com?subject=Introduction - James Palmer" class="intro fa fa-envelope"></a>
-          <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="intro fa fa-file"></a>
+          <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="intro pdf">PDF</a>
         
       </div>
         
@@ -102,18 +103,26 @@ https://alan-luo.github.io/cv-template/
               JCDecaux is the number one outdoor advertising company worldwide, delivering high-quality and innovative advertising solutions. 
             </h6>
 						Report to COO as the Australia and New Zealand lead on new strategy and innovation projects. Identifying roadmap, collaborating internally to deliver projects and establish JCDecaux leading innovative brand image.
-              <br>
-              <a href="#jCDecauxShowMore" data-toggle="collapse">Show details</a>
-          <div id="jCDecauxShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+              <br><br>
+        
+          <!-- JCD DETAILS-->
+          <div class="wrap-collabsible-JCD">
+            <input id="collapsible-JCD" class="toggle-JCD" type="checkbox">
+            <label for="collapsible-JCD" class="lbl-toggle-JCD">Role Details</label>
+            <div class="collapsible-content-JCD">
+              <div class="content-inner-JCD">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul> 
-				</div>
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>         
+             
 			</div>
       </div>    
     <br>
@@ -128,49 +137,63 @@ https://alan-luo.github.io/cv-template/
               EquiLend is an industry owned Financial Technology Company that provides trading, post-trade and market data services to borrowers, lenders and beneficial owners within the securities finance industry
             </h6>
 						I held multiple roles across the business since joining in 2012. Moving from Sales to establishing a new business revenue stream acting as the global product owner to a product specialist for the market data arm, DataLend.              <br>
- 
-          <br>
-          <!--DataLend-->
-          <a class="role" href="#dataLendShowMore" data-toggle="collapse">DATALEND - PRODUCT SPECIALIST</a>
-                <div id="dataLendShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+           <br>
+            <!-- DataLend DETAILS-->
+          <div class="wrap-collabsible-DL">
+            <input id="collapsible-DL" class="toggle-DL" type="checkbox">
+            <label for="collapsible-DL" class="lbl-toggle-DL">DataLend - Product Specialist</label>
+            <div class="collapsible-content-DL">
+              <div class="content-inner-DL">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul>                
-				</div>
-          
-          <br>
-          <!--Swaps-->
-          <a class="role" href="#swapLendShowMore" data-toggle="collapse">SWAPS - GLOBAL PRODUCT OWNER</a>
-                <div id="swapLendShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic. </li>
+                  Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>      
+
+                      <!-- SW Swaps DETAILS-->
+          <div class="wrap-collabsible-SW">
+            <input id="collapsible-SW" class="toggle-SW" type="checkbox">
+            <label for="collapsible-SW" class="lbl-toggle-SW">SWAPS - GLOBAL PRODUCT OWNER</label>
+            <div class="collapsible-content-SW">
+              <div class="content-inner-SW">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul>                
-				</div>
-          
-          <br>
-          <!--EquiLend-->
-          <a class="role" href="#equiLendShowMore" data-toggle="collapse">EQUILEND - SALES</a>
-                <div id="equiLendShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li>
+                  Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>      
+
+                            <!-- EQUILEND DETAILS-->
+          <div class="wrap-collabsible-EL">
+            <input id="collapsible-EL" class="toggle-EL" type="checkbox">
+            <label for="collapsible-EL" class="lbl-toggle-EL">EQUILEND - SALES</label>
+            <div class="collapsible-content-EL">
+              <div class="content-inner-EL">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul>                
-				</div>
-          
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li>
+                  Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>  
           
 			</div>
   </div>
@@ -186,19 +209,28 @@ https://alan-luo.github.io/cv-template/
 					<h6>
           Lehman Brothers was.... 
           </h6>
-          <p>History</p>
-          <a class="read-more collapsed" href="#lehmanShowMore" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSummary">+ read more</a>
-         <div id="lehmanShowMore" class="collapse">
-           <ul> <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li> Responsible for:
+          <p>What did I do</p>
+          
+          <!-- LEHMAN BROTHERS DETAILS-->
+          <div class="wrap-collabsible-LB">
+            <input id="collapsible-LB" class="toggle-LB" type="checkbox">
+            <label for="collapsible-LB" class="lbl-toggle-LB">ROLE DETAILS</label>
+            <div class="collapsible-content-LB">
+              <div class="content-inner-LB">
                 <ul>
-                  <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
-                  <li>Data analysis of results to direct development and refine solution</li>
-                  <li>Produce go-to-market strategy for pricing and scale</li>
-              	</ul>
-              <li></li>
-          </ul> 
-				</div>
-			</div>
+                  <li>Delivered a POC, collaborating with Carsales.com.au using a purpose built camera and machine learning algorithm and integration to Google Maps API, to serve dynamic adverts on a roadside billboard based on predominant car body shape of approaching traffic.</li>
+                  Responsible for:
+                    <ul>
+                      <li>Establishing Carsales relationship and managing the install and testing efforts.</li>
+                      <li>Data analysis of results to direct development and refine solution</li>
+                      <li>Produce go-to-market strategy for pricing and scale</li>
+                    </ul>
+                </ul> 
+              </div>
+            </div>
+          </div>  
+
+		</div>
   </div>      
         
   </div>
@@ -249,14 +281,15 @@ https://alan-luo.github.io/cv-template/
       <div class = "col">
         <a href="https://www.linkedin.com/in/j-palmer/" class="fa mini fa-linkedin"></a>
         <a href="mailto:james.palms@gmail.com?subject=Introduction - James Palmer" class="fa mini fa-envelope"></a>
-        <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="mini fa fa-file"></a>
         <a href="" class="fa mini fa-github"></a>
-        </div>
+        <a href="https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FJames%20Palmer%20CV%2020-8-19.pdf?v=1567580093907" class="mini pdf fa fa-file"></a>
+      </div>
         
         <div class="col-5" style="text-align: right" >
           
         <a>&copy; James Palmer 2019</a>
         </div>  
+      </div>
       </div>
 
 		</footer>
