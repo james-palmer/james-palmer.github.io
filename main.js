@@ -1,3 +1,5 @@
+// Toggle JS for dropdowns
+
 let myLabelsJCD = document.querySelectorAll('.lbl-toggle-JCD');
 
 Array.from(myLabelsJCD).forEach(label => {

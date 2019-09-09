@@ -262,15 +262,15 @@ footer hr {
 
 /* Introduction */
 .introduction {
-padding: 3em 1em;
+  padding: 3em 1em;
   min-height: 100vh;
   text-align: center;
   vertical-align: middle;
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) 90% ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
   background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
-  background-position: top left;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%,cover;
+  background-size: 100%, 100%, 400px,200px;
   background-blend-mode: darken;
   background-attachment: fixed;  
   color:#FFFFFF;
@@ -287,14 +287,14 @@ padding: 3em 1em;
 }
 
 .introduction h2, .experience p {
-  text-align: center;
+  text-align: left;
 }
 
 .introduction [class*="row"]:last-of-type {
   border: none;
 }
 
-@media only screen and (min-width: 768px){
+@media (min-width: 576px){
   
   .introduction {
   vertical-align: middle;
@@ -302,26 +302,25 @@ padding: 3em 1em;
   background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 100% 100%,contain;
+  background-size: 100% 100%, contain;
   background-blend-mode: darken;
   background-attachment: fixed;  
   }
   
   .introduction h2, .introduction p {
-    text-align: center;
+    text-align: left;
     
   }
 }
 
 
-
-
 /* Experience */
+
 .experience {
   padding: 3em 1em;
   min-height: 100vh;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   background-color:#606b76;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fblur-chart-data-159888%20Flip.jpg?v=1567465397294);
   background-position: top right;
@@ -350,9 +349,9 @@ padding: 3em 1em;
   border: none;
 }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 576px) {
   .experience h2, .experience p {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -435,7 +434,7 @@ padding: 3em 1em;
   border: none;
 }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 576px) {
   .interests h2, .interests p {
     text-align: center;
   }
@@ -527,6 +526,7 @@ padding: 3em 1em;
 }
 
 /* Collapsible read more elements */
+
 
 /* JCDecaux */
 
