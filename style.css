@@ -11,7 +11,13 @@ body {
 
 h1, h2, h3 {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  }
+
+h2{
+ color:#cfd1d1;
+ text-align: center;
+ font-size: 1em;
+position: relative;
 }
 
 expLogo {
@@ -32,6 +38,7 @@ p {
   font-size: 1em;
   line-height: 1.8;
   margin-top: 0em;
+  text-align: left;
 }
 
 img {
@@ -51,9 +58,58 @@ hr {
   margin-bottom: 2em;
 }
 
+ .scroll-down { 
+  height: 80px; 
+  width: 100%;
+   right: 0px;
+  display: block; 
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  z-index: 6;
+	color: #FFFFFF; 
+	font-size: 30px; 
+	padding-right: 2px; 
+	padding-top: 20px; 
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.scroll-down:hover{ 
+  padding-top: 25px; 
+  color: #F4DD9F;
+  animation;
+  text-decoration: none;
+  transition: all 0.8s ease;
+  animation:none;
+}
+
+
+@media (max-width: 767px)
+.jumbotron .scroll-down {
+    width: 100%;
+    right: 0px;
+}
+
+@keyframes wiggle {
+	0% {
+		padding-top: 20px;
+	}
+
+	50% {
+		padding-top: 28px;
+	}
+
+	100% {
+		padding-top: 20px;
+	}
+}
+
 .front {
   background-color: #343A40;
-  background-image: url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fbright-bulb-dark-132340.jpg?v=1567395796285);
+  background-image: url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fimage.png?v=1568092806641);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -63,8 +119,8 @@ hr {
   text-align: center;
   height: 100vh;
   width: 100%;
-   }
 
+   }
 
 .front h1 {
   color: white;
@@ -74,18 +130,18 @@ hr {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: relative;
-  top: 75%;
+  top: 70%;
   font-weight: 700;
 }
 
-.front p {
-  color: #ffffff;
+.front h2 {
+  color: white;
   font-size: 1.1em;
   padding-bottom: 1.3em;
   padding-top: .5em;
   opacity: .9;
   position: relative;
-  top: 75%;
+  top: 70%;
 }
 
 .chevron {
@@ -119,12 +175,12 @@ hr {
 }
 
 .chevron:before {
-  left: 0;
+  left: calc(50% - 10px);
   transform: skew(0deg, 30deg);
 }
 
 .chevron:after {
-  right: 0;
+ right: calc(50% - 10px);
   width: 50%;
   transform: skew(0deg, -30deg);
 }
@@ -149,10 +205,8 @@ hr {
 }
 
 
-
 .navbar {
  border-style:outset; 
- 
 }
 
 
@@ -262,6 +316,15 @@ footer hr {
 
 
 /* Introduction */
+
+/*HELP PLEASE!
+
+This CSS is used for the introduction section for devices <768px (mobile) to transition to show image centered in the background and zoomed out (vs left centered with gradient overlay)
+
+Image displays correctly in the browser, and when simulating device using Chrome dev tools, however, shows a very zoomed in image when viewing on mobile device
+
+Why isn't it consistent? Where am I going wrong?*/
+
 .introduction {
   padding: 3em 1em;
   min-height: 100vh;
@@ -271,31 +334,13 @@ footer hr {
   background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%, 100%, 400px,200px;
+  background-size: 100%, 100%, cover;
   background-blend-mode: darken;
   background-attachment: fixed;  
   color:#FFFFFF;
   }
 
-.introduction [class*="row"] {
-  border-bottom: dotted 1px #ccc;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.introduction h2 {
-  margin-bottom: 0;
-}
-
-.introduction h2, .experience p {
-  text-align: left;
-}
-
-.introduction [class*="row"]:last-of-type {
-  border: none;
-}
-
-@media (min-width: 576px){
+@media (min-width: 768px){
   
   .introduction {
   vertical-align: middle;
@@ -342,7 +387,11 @@ footer hr {
   margin-bottom: 0;
 }
 
-.experience h2, .experience p {
+.experience p {
+  text-align: left;
+}
+
+.roleHead {
   text-align: center;
 }
 
@@ -451,6 +500,7 @@ footer hr {
     background-position-y: bottom;
     color: #fff!important;
     transition: all 0.8s ease;
+    text-decoration:none;
 }
 
 .fa-envelope:hover {
@@ -461,6 +511,7 @@ footer hr {
     background-position-y: bottom;
     color: #fff!important;
   transition: all 0.8s ease;
+  text-decoration:none;
   }
 
 
@@ -472,6 +523,7 @@ footer hr {
     background-position-y: bottom;
     color: #fff!important;
     transition: all 0.8s ease;
+    text-decoration:none;
 }
 
 .fa-github:hover{
@@ -482,6 +534,7 @@ footer hr {
     background-position-y: bottom;
     color: #fff!important;
     transition: all 0.8s ease;
+   text-decoration:none;
 }
 
 
