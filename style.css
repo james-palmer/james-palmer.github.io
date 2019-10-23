@@ -124,7 +124,7 @@ hr {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: relative;
-  top: 70%;
+  top: 68%;
   font-weight: 700;
 }
 
@@ -135,7 +135,7 @@ hr {
   padding-top: .5em;
   opacity: .9;
   position: relative;
-  top: 70%;
+  top: 65%;
 }
 
 .chevron {
@@ -312,18 +312,17 @@ footer hr {
 /* Introduction */
 
 .introduction {
-  padding-top:400px;
+  padding-top:300px;
   min-height: 100vh;
   text-align: center;
   vertical-align: left;
-  background: linear-gradient(white, rgba(52, 58, 64, 1) 90%),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
-  background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
+  background: linear-gradient(white, rgba(52, 58, 64, 1) 100%),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
+  background-color:linear-gradient(rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
   background-blend-mode: darken;
   color:#FFFFFF;
-
   }
 
 @media (min-width: 768px){
@@ -349,18 +348,20 @@ footer hr {
 
 
 .intro{
-  padding: 30px;
+  padding: 33px;
   font-size: 15px;
   width: 80px;
   height: 80px;
-  text-align: center;
+  text-align: left;
   vertical-align: left;
   text-decoration: none;
   border-radius: 50%;
+  background: transparent;
   color: white;
   margin: 10px 10px;
   position: relative;
   left: 0px;
+  float:left;
   border: .5px solid #cfd1d1;
     border-top-color: rgb(207, 209, 209);
     border-top-style: solid;
@@ -379,12 +380,22 @@ footer hr {
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;  
+  }
+
+.intro p {
+  left: 0px
+}
+
+.link{
+  text-align: left;
+  align-items: middle;
+  margin-top: 37px;
 }
 
 /* SKILLS */
 
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
-#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li:hover { background: #22A39F; }
 #abilities ul > li .ability-title { display: inline-block; width: 60%; }
 #abilities ul > li .ability-score { float: right; }
 #abilities ul > li .ability-score .glyphicon { 
@@ -396,8 +407,20 @@ footer hr {
     transition: all 0.3s;
 }
 #abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
-#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 0px; } 
 ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
+
+
+.skills {
+  min-height: 80vh;
+  padding: 3em 1em;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Farchitect-architecture-black-and-white-1537008.jpg?v=1568271366208);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  color:#FFFFFF
+  }
 
 
 /* Experience */
