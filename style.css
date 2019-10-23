@@ -252,36 +252,8 @@ footer hr {
 
 /* ------------------- Grid -------------------*/
 
-.container {
-  max-width: 50em;
-  width:92%;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.row {
-  clear: both;
-  margin-right: -1%;
-  margin-left:  -1%;
-  
-}
 
-.row:before,
-.row:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.row:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- */
-.row {
-  *zoom: 1;
-}
 
 .grid-1,
 .grid-2,
@@ -313,11 +285,10 @@ footer hr {
 
 .introduction {
   padding-top:300px;
-  min-height: 100vh;
+  height: 110vh;
   text-align: center;
   vertical-align: left;
-  background: linear-gradient(white, rgba(52, 58, 64, 1) 100%),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
-  background-color:linear-gradient(rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
+  background: linear-gradient(rgba(52, 58, 64, .3), rgba(52, 58, 64, 1)),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
@@ -365,16 +336,16 @@ footer hr {
   border: .5px solid #cfd1d1;
     border-top-color: rgb(207, 209, 209);
     border-top-style: solid;
-    border-top-width: 0.5px;
+    border-top-width: 2px;
     border-right-color: rgb(207, 209, 209);
     border-right-style: solid;
-    border-right-width: 0.5px;
+    border-right-width: 2px;
     border-bottom-color: rgb(207, 209, 209);
     border-bottom-style: solid;
-    border-bottom-width: 0.5px;
+    border-bottom-width: 2px;
     border-left-color: rgb(207, 209, 209);
     border-left-style: solid;
-    border-left-width: 0.5px;
+    border-left-width: 2px;
     border-image-source: initial;
     border-image-slice: initial;
     border-image-width: initial;
@@ -393,13 +364,16 @@ footer hr {
 }
 
 /* SKILLS */
+#attributes {
+  text-align: center
+}
 
-#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li { min-height: 30px; padding: 5px 5px; }
 #abilities ul > li:hover { background: #22A39F; }
 #abilities ul > li .ability-title { display: inline-block; width: 60%; }
 #abilities ul > li .ability-score { float: right; }
-#abilities ul > li .ability-score .glyphicon { 
-	color: green; 
+#abilities ul > li .ability-score .fa { 
+	color: white; 
 	font-size: 14px; 
 	 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -408,6 +382,11 @@ footer hr {
 }
 #abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 0px; } 
+
+.list{
+  padding-top: 20px;
+}
+
 ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 
 
@@ -711,8 +690,8 @@ figure.effect:hover p {
 }
 
 .fa-envelope:hover {
-      border: .5px solid #008744;
-    background: #008744;
+      border: .5px solid #22A39F;
+    background: #22A39F;
     background-position: left bottom;
     background-position-x: left;
     background-position-y: bottom;
@@ -802,6 +781,7 @@ input[type='checkbox'] {
 
 .lbl-toggle-JCD:hover {
   color: white;
+   background:#22A39F;
 }
 
 .lbl-toggle-JCD::before {
@@ -877,6 +857,7 @@ input[type='checkbox'] {
 
 .lbl-toggle-DL:hover {
   color: white;
+  background:#22A39F;
 }
 
 .lbl-toggle-DL::before {
@@ -952,6 +933,7 @@ input[type='checkbox'] {
 
 .lbl-toggle-SW:hover {
   color: white;
+   background:#22A39F;
 }
 
 .lbl-toggle-SW::before {
@@ -1028,6 +1010,7 @@ input[type='checkbox'] {
 
 .lbl-toggle-EL:hover {
   color: white;
+   background:#22A39F;
 }
 
 .lbl-toggle-EL::before {
