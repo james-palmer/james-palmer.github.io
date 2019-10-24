@@ -25,14 +25,18 @@ expLogo {
 }
 
 a {
-  color: #3d6dbe;
-  text-decoration: none;
+  color: white !important;
 }
 
 a:focus,
 a:hover {
-  color: #6594e0;
+  color: #22A39F;
 }
+
+a:link {
+  color: #22A39F;
+}
+
 
 p {
   font-size: 1em;
@@ -210,6 +214,7 @@ section h1 {
   margin-bottom: .6em;
 }
 
+
 /* Same font-size and line-height as p element */
 section ul li, section ol li {
   font-size: 1em;
@@ -319,7 +324,7 @@ footer hr {
 
 
 .intro{
-  padding: 33px;
+  padding: 30px;
   font-size: 15px;
   width: 80px;
   height: 80px;
@@ -351,6 +356,7 @@ footer hr {
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;  
+  
   }
 
 .intro p {
@@ -360,8 +366,21 @@ footer hr {
 .link{
   text-align: left;
   align-items: middle;
-  margin-top: 37px;
+  margin-top: 40px;
 }
+
+@media screen and (min-width: 576px) {
+
+  .link h6 {
+     margin: 0;
+    }
+  .intro{
+    float:none;
+    text-align: center;
+  }
+  
+}
+
 
 /* SKILLS */
 #attributes {
@@ -393,13 +412,21 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 .skills {
   min-height: 80vh;
   padding: 3em 1em;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Farchitect-architecture-black-and-white-1537008.jpg?v=1568271366208);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fbooks-bookshelves-bookstore-1907785.jpg?v=1571810936593);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
   color:#FFFFFF
   }
+
+@media screen and (min-width: 576px) {
+
+  .skills {
+    background-attachment: fixed;
+    text-align:center;
+    }
+}
 
 
 /* Experience */
@@ -410,7 +437,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   vertical-align: middle;
   text-align: left;
   background-color:#606b76;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fblur-chart-data-159888%20Flip.jpg?v=1567465397294);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fblur-chart-data-159888%20Flip.jpg?v=1567465397294);
   background-position: top right;
   background-repeat: repeat;
   background-size: cover;
@@ -465,7 +492,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   text-align: center;
   min-height: 100vh;
   background-color:#dee1e4;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FLSE%20Graduation.jpg?v=1567488814669);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FLSE%20Graduation.jpg?v=1567488814669);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -549,6 +576,11 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   .interests h2, .interests p {
     text-align: center;
   }
+  
+  .interests {
+    background-attachment: fixed;
+    text-align:center;
+    }
 }
 
 
@@ -570,6 +602,10 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   color:white;
 
   }
+
+.project{
+  padding:40px;
+}
 
 @media (min-width: 768px){
   
@@ -596,6 +632,30 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   
   
 }
+
+.crop {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+  horizontal-align: center;
+  vertical-align: middle;
+      text-align: center;
+
+}
+
+.pic{
+  display: inline;
+  margin: 0 auto;
+  margin-left: 0%;
+  height: 100%;
+  width: auto;
+  
+}
+
+
+
 
 /*---------------*/
 /***** EFFECT *****/
@@ -673,6 +733,7 @@ figure.effect:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
 
 
 /*---------------------------------*/
