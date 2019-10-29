@@ -81,6 +81,7 @@ hr {
 	animation-iteration-count: infinite;
 	animation-direction: normal;
 }
+
 .scroll-down:hover{ 
   padding-top: 25px; 
   color: #F4DD9F;
