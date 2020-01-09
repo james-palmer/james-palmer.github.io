@@ -107,7 +107,7 @@ hr {
 
 .front {
   background-color: #343A40;
-  background-image: url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fimage.png?v=1568092806641);
+  background-image: url("Assets/lightbulb.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -287,9 +287,6 @@ footer hr {
 
 /* ------------------- Grid -------------------*/
 
-
-
-
 .grid-1,
 .grid-2,
 .grid-3,
@@ -324,7 +321,7 @@ footer hr {
   height: 110vh;
   text-align: center;
   vertical-align: left;
-  background: linear-gradient(rgba(52, 58, 64, .5), rgba(52, 58, 64, 1)),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
+  background: linear-gradient(rgba(52, 58, 64, .5), rgba(52, 58, 64, 1)),url("Assets/JP-headshot.jpeg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
@@ -346,7 +343,7 @@ footer hr {
   vertical-align: middle;
   min-height: 100vh;
   padding-top: 100px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(52, 58, 64, 1) 60vh), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(52, 58, 64, 1) 60vh), url("Assets/JP-headshot.jpeg");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 100% 100%, contain;
@@ -432,7 +429,7 @@ footer hr {
 
 #abilities ul > li { min-height: 30px; padding: 5px 5px; }
 #abilities ul > li:hover { background: #22A39F; }
-#abilities ul > li .ability-title { display: inline-block; text-align:center; width: 40%; float: left; }
+#abilities ul > li .ability-title {text-align:center; width: 40%; float: left; }
 #abilities ul > li .ability-score { float: right; }
 #abilities ul > li .ability-score .fa { 
 	color: white; 
@@ -456,7 +453,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 .skills {
   min-height: 80vh;
   padding: 3em 1em;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fbooks-bookshelves-bookstore-1907785.jpg?v=1571810936593);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(Assets/books-bookshelves-bookstore-1907785.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -481,7 +478,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   vertical-align: middle;
   text-align: left;
   background-color:#606b76;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Fblur-chart-data-159888%20Flip.jpg?v=1567465397294);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("Assets/blur-chart-data-159888\ Flip.jpg");
   background-position: top right;
   background-repeat: repeat;
   background-size: cover;
@@ -561,7 +558,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   text-align: center;
   min-height: 100vh;
   background-color:#dee1e4;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FLSE%20Graduation.jpg?v=1567488814669);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("Assets/LSE\ Graduation.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -610,7 +607,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   text-align: center;
   min-height: 100vh;
   background-color:#dee1e4;
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Faerial-aerial-shot-aerial-view-1078981.jpg?v=1568270061184);
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(Assets/Beach_aerial.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -662,8 +659,8 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   min-height: 100vh;
   text-align: center;
   vertical-align: left;
-  background: linear-gradient(rgba(52, 58, 64, 0.5) , rgba(52, 58, 64, .7) 500px),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2Farchitect-architecture-black-and-white-1537008.jpg?v=1568271366208);
-  background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
+  background: linear-gradient(rgba(52, 58, 64, 0.5) , rgba(52, 58, 64, .7) 500px),url(Assets/architecture-drawing.jpg);
+
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
@@ -680,14 +677,9 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   .projects {
   vertical-align: middle;
   padding-top: 100px;
-  background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%, cover;
-  background-blend-mode: darken;
   background-attachment: fixed;
   text-align: left;
-  color: white;
       }
   .projects h2 {
     color:white
@@ -707,9 +699,8 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
     position: relative;
     overflow: hidden;
     border-radius: 100%;
-  horizontal-align: center;
-  vertical-align: middle;
-      text-align: center;
+    vertical-align: middle;
+    text-align: center;
 
 }
 
@@ -717,10 +708,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   display: inline;
   margin: 0 auto;
   margin-left: 0%;
-  height: 100%;
-  width: auto;
-  
-}
+ }
 
 
 
