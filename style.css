@@ -52,7 +52,7 @@ img {
 .right-backround-img{
   position: absolute;
   top:0px;
-  right; 0px;  
+  right: 0px;  
 }
 
 hr {
@@ -85,7 +85,6 @@ hr {
 .scroll-down:hover{ 
   padding-top: 25px; 
   color: #F4DD9F;
-  animation;
   text-decoration: none;
   transition: all 0.8s ease;
   animation:none;
@@ -204,10 +203,40 @@ hr {
 }
 
 
-.navbar {
- border-style:outset; 
-}
+.navbar-nav {
+  position: absolute;
+  right: 20px;
+ }
 
+@media screen and (max-width: 575px) {
+  
+  .navbar-nav {  
+ text-align: right;
+  background-color: teal;
+  padding: 56px 10px 10px 10px !important;
+  right: 0;
+  top: 0;
+  animation: none;
+}
+  
+  .navbar {
+  padding: 0px 5px 0px 20px  !important;
+    
+  }
+  
+  .navbar-toggler{
+    height:80% !important;
+  }
+  
+  .headerContent {
+    height: 100%;
+    z-index: 1000000;
+  }
+  
+  .container {
+    width:100% !important;
+  }
+}
 
 section h1 {
   font-size: 1.8em;
@@ -235,7 +264,7 @@ footer hr {
 }
 
 .center {
-  text-align: center;
+  text-align: center !important;
 }
 
 @media screen and (min-width: 50em) {
@@ -290,11 +319,12 @@ footer hr {
 /* Introduction */
 
 .introduction {
-  padding-top:300px;
+  position: relative;
+  padding-top:50px;
   height: 110vh;
   text-align: center;
   vertical-align: left;
-  background: linear-gradient(rgba(52, 58, 64, .3), rgba(52, 58, 64, 1)),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
+  background: linear-gradient(rgba(52, 58, 64, .5), rgba(52, 58, 64, 1)),url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
@@ -302,14 +332,21 @@ footer hr {
   color:#FFFFFF;
   }
 
+@media (max-width: 450px) { 
+  .introText{
+    position: absolute;
+    bottom:10px;
+    left:0;
+  }
+}
+
 @media (min-width: 768px){
   
   .introduction {
   vertical-align: middle;
   min-height: 100vh;
   padding-top: 100px;
-  background: linear-gradient(to right, #FFFFFF, #343a40 600px), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
-  background-color:linear-gradient( rgba(0, 0, 0, 1), rgba(52, 58, 64, 1)),#343a40);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(52, 58, 64, 1) 60vh), url(https://cdn.glitch.com/4b2d7540-9cfb-4ae0-9c87-cb4795f3a6bd%2FEquilend_E_0007.jpg?v=1567391069482);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 100% 100%, contain;
@@ -317,12 +354,17 @@ footer hr {
   background-attachment: fixed;  
   }
   
+
+  
   .introduction h2, .introduction p {
     text-align: left;
-    
+  }
+  
+  .introText{
+    padding-left: 50%;
+    width: 100%;
   }
 }
-
 
 .intro{
   padding: 30px;
@@ -338,7 +380,7 @@ footer hr {
   margin: 10px 10px;
   position: relative;
   left: 0px;
-  float:left;
+
   border: .5px solid #cfd1d1;
     border-top-color: rgb(207, 209, 209);
     border-top-style: solid;
@@ -365,7 +407,7 @@ footer hr {
 }
 
 .link{
-  text-align: left;
+  text-align: center;
   align-items: middle;
   margin-top: 40px;
 }
@@ -390,7 +432,7 @@ footer hr {
 
 #abilities ul > li { min-height: 30px; padding: 5px 5px; }
 #abilities ul > li:hover { background: #22A39F; }
-#abilities ul > li .ability-title { display: inline-block; width: 60%; }
+#abilities ul > li .ability-title { display: inline-block; text-align:center; width: 40%; float: left; }
 #abilities ul > li .ability-score { float: right; }
 #abilities ul > li .ability-score .fa { 
 	color: white; 
@@ -406,6 +448,7 @@ footer hr {
 .list{
   padding-top: 20px;
 }
+
 
 ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 
@@ -480,6 +523,31 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   background-blend-mode: darken;
   color:#FFFFFF
     }
+}
+
+
+#newsCorp figure {
+  display: none;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  padding: 0;
+  margin: 0;
+  border: 5px solid #fd0;
+  background: #fd0;
+  border-radius: 1em;
+}
+
+#newsCorp img {
+  display: block;
+  border-radius: 0.8em;
+  max-width: 100%;
+  height: auto;
+}
+
+#newsCorp:focus figure,
+#newsCorp:hover figure {
+  display: block;
 }
 
 
@@ -565,7 +633,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 }
 
 .interests h2, .interests p {
-  text-align: center;!important
+  text-align: center !important;
   margin-bottom:0px;
 }
 
@@ -601,7 +669,6 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   background-size: 100% 100%, cover;
   background-blend-mode: darken;
   color:white;
-
   }
 
 .project{
@@ -772,8 +839,6 @@ figure.effect:hover p {
   transition: all 0.8s ease;
   text-decoration:none;
   }
-
-
 
 .pdf:hover{
       border: .5px solid #ff7070;
