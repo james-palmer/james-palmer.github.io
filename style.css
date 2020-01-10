@@ -20,10 +20,6 @@ h2{
   position: relative;
 }
 
-expLogo {
-  width: 10px
-}
-
 a {
   color: white !important;
 }
@@ -36,7 +32,6 @@ a:hover {
 a:link {
   color: #22A39F;
 }
-
 
 p {
   font-size: 1em;
@@ -117,8 +112,7 @@ hr {
   text-align: center;
   height: 100vh;
   width: 100%;
-
-   }
+}
 
 .front h1 {
   color: white;
@@ -142,28 +136,27 @@ hr {
   top: 65%;
 }
 
-
-
 .navbar-nav {
   position: absolute;
   right: 20px;
- }
+}
+
+.navbar {
+  padding: 0px 5px 0px 20px  !important; 
+}
 
 @media screen and (max-width: 575px) {
   
   .navbar-nav {  
  text-align: right;
   background-color: teal;
-  padding: 56px 10px 10px 10px !important;
+  padding: 56px 0px 0px 0px !important;
   right: 0;
   top: 0;
   animation: none;
-}
-  
-  .navbar {
-  padding: 0px 5px 0px 20px  !important;
-    
   }
+  
+  
   
   .navbar-toggler{
     height:80% !important;
@@ -225,35 +218,6 @@ footer hr {
   }
 }
 
-
-/* ------------------- Grid -------------------*/
-
-.grid-1,
-.grid-2,
-.grid-3,
-.grid-4,
-.grid-5,
-.grid-6 {
-  float: left;
-  width:100%;
-  padding: 0 1%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 40em) {
-  .grid-1 { width: 16.6666666%; }
-  .grid-2 { width: 33.3333333%; }
-  .grid-3 { width: 50%; }
-  .grid-4 { width: 66.6666666%; }
-  .grid-5 { width: 83.3333333%; }
-  .grid-6 { width: 100%; }
-
-}
-
-/* -------------------Custom Blocks----------------- */
-
-
 /* Introduction */
 
 .introduction {
@@ -291,8 +255,6 @@ footer hr {
   background-blend-mode: darken;
   background-attachment: fixed;  
   }
-  
-
   
   .introduction h2, .introduction p {
     text-align: left;
@@ -338,7 +300,7 @@ footer hr {
     border-image-outset: initial;
     border-image-repeat: initial;  
   
-  }
+}
 
 .intro p {
   left: 0px
@@ -446,6 +408,11 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   text-align: center;
 }
 
+.roleDescirption {
+  text-align: left;
+}
+
+
 .experience [class*="row"]:last-of-type {
   border: none;
 }
@@ -461,6 +428,15 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   background-blend-mode: darken;
   color:#FFFFFF
     }
+
+    .roleHead {
+      float: left;
+    }
+    
+    .roleDescription {
+      float: right;
+    }
+
 }
 
 
@@ -535,9 +511,6 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
     }
 }
 
-
-
-
 /* interests Block */
 
 .interests {
@@ -590,10 +563,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
     }
 }
 
-
-
 /* projects Block */
-
 
 .projects {
   padding: 3em 1em;
@@ -630,18 +600,16 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 .fa-gamepad{
   color:white;
   text-decoration:none;
-  
-  
 }
 
 .crop {
-    width: 140px;
-    height: 140px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 100%;
-    vertical-align: middle;
-    text-align: center;
+  width: 140px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  vertical-align: middle;
+  text-align: center;
 
 }
 
@@ -652,10 +620,8 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
  }
 
 
-
-
 /*---------------*/
-/***** EFFECT *****/
+/***** IMAGE EFFECT *****/
 /*---------------*/
 
 figure.effect {
