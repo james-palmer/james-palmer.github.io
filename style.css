@@ -418,7 +418,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 }
 
 @media (min-width: 576px) {
-  .experience h2, .experience p {
+  .experience h2 {
     text-align: center;
   }
   .experience{background-attachment: fixed;
