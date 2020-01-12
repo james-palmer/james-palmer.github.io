@@ -102,7 +102,7 @@ hr {
 
 .front {
   background-color: #343A40;
-  background-image: url("Assets/lightbulb.jpg");
+  background-image: url("Assets/Lightbulb\ centered.png");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -422,18 +422,18 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
     text-align: center;
   }
   .experience{background-attachment: fixed;
-    background-position: top right;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
   color:#FFFFFF
-    }
+  }
 
-    .roleHead {
+  .roleHead {
       float: left;
     }
     
-    .roleDescription {
+  .roleDescription {
       float: right;
     }
 
