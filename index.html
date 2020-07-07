@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://unpkg.com/treeflex/dist/css/treeflex.css" rel="stylesheet">
   <!-- favicon -->
 	<link rel="icon" href="Images/Logo/Android Logo.png">
   <link rel="apple-touch-icon" href="Images/Logo/apple-touch-icon.png">
@@ -303,6 +303,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="experience anchor" id="experience">
        <h2>EXPERIENCE</h2>
 	<div class="container">
+
+  
+
       <br>
 			<div class="row">
 				<div class="col-sm-4 roleHead">
@@ -447,8 +450,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>      
         
   </div>
+
+  <button onclick="showExamples()" class="btn btn-info" style="left: 50%; width:100% " type="button" id="examplesButton">
+    Show work examples (with password)
+  </button>
+
 </section>
-	
+
+<script>
+function showExamples(){
+console.log("Enter pwd")
+      var s ="";
+    
+      while (s!= "FoodByUs")
+      {
+      s=prompt("This example page is password protected. Please confirm the password to continue:");
+      if (s=="FoodByUs")
+      {
+      document.getElementById("examples").style.display = 'block'
+      }
+      else
+      {
+      document.getElementById("example").style.display = 'none'
+      alert("Incorrect password");
+      
+      }
+      }
+}
+
+</script>
+<section class="examples" style = "display:none" id="examples">	
+  <div id="example" class="tf-tree example">
+      <ul>
+        <li>
+          <span class="tf-nc header" style="width:500px">JAMES PALMER SAMPLE WORK</span>
+          <ul>
+            <li>
+              <span class="tf-nc"><img   src="Images/IMG/EquiLend Logo.png" alt="EquiLend"></span>
+              <ul>
+                
+                <li><span class="tf-nc">Swaptimization</span>
+                  <ul>
+                    <li><span class="tf-nc"><a target="_blank" href="https://docs.google.com/spreadsheets/d/1jCRmkeijxnRrW7bIW5GwwJsYgghY4-5D77veMsGhgQM/edit?usp=sharing">Sample Enhancement Documentation </a></span></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li>
+              <span class="tf-nc"><img src="Images/IMG/JCD Logo.png" alt="JCDecaux"></span>
+              <ul>
+                <li><span class="tf-nc">Vehicle Recognition</span>
+                  <ul>
+                      <li><span class="tf-nc"><a target="_blank" href="https://drive.google.com/file/d/112adIq6NYRQNDxll0yVrWRMlPb0Xn66n/view?usp=sharing">Project Plan</a></span></li>
+                  </ul>
+              </li>
+                <li><span class="tf-nc">Airport Audience Measurement</span>
+                  <ul>
+                      <li><span class="tf-nc"><a target="_blank" href="https://drive.google.com/file/d/1Xaw24-M5-LfPmDePTZv1uWBuLZbXbQUc/view?usp=sharing">Project Plan</a></span></li>
+                      <li><span class="tf-nc"><a target="_blank" href="https://drive.google.com/file/d/1i7o4giOWSdaUKc96sqPmkt-Zfkxt0ZE_/view?usp=sharing">Project Brief</a></span></li>    
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>     
+
+</section>  
+
          
 <section class="education anchor" id="education">	
       <h2>EDUCATION</h2>
