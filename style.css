@@ -1152,3 +1152,64 @@ input[type='checkbox'] {
   text-align: left;
 }
 /* --------------------- */
+
+/* Examples page */
+
+.example .tf-nc {
+  background: black;
+  text-align: middle;
+  min-height:60px;
+  width:150px;
+}
+
+.example .tf-nc a{
+  color:  teal !important;
+  text-align: middle;
+  min-height:60px;
+  width:150px;
+}
+
+.example .tf-nc .header{
+  background: black;
+  text-align: middle;
+  height:100px;
+  width:300px;
+}
+
+.tf-custom .tf-nc:before,
+.tf-custom .tf-nc:after {
+  /* css here */
+}
+
+.tf-custom li li:before {
+  /* css here */
+}
+.examples {
+  padding: 3em 1em;
+  min-height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(rgba(52, 58, 64, 0.5) , rgba(52, 58, 64, .7) 500px),url("Images/Background/architecture-drawing.jpg");
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover;
+  background-blend-mode: darken;
+  color:white;
+  }
+
+}
+
+@media (min-width: 1px){
+  
+  .examples {
+  vertical-align: middle;
+  padding-top: 100px;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: left;
+      }
+  .examples h2 {
+    color:white
+  }
+}
