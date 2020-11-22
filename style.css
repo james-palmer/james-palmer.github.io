@@ -784,7 +784,81 @@ figure.effect:hover p {
 }
 
 /* Collapsible read more elements */
+/* Rokt*/
 
+.wrap-collabsible-Rokt {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle-Rokt {
+  display: block;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+
+  padding: 1rem;
+
+  color: #cfd1d1;
+  
+  border: .5px solid #cfd1d1;
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle-Rokt:hover {
+  color: white;
+  background:#22A39F;
+}
+
+.lbl-toggle-Rokt::before {
+  content: ' ';
+  display: inline-block;
+  
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle-Rokt:checked + .lbl-toggle-Rokt::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content-Rokt {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle-Rokt:checked + .lbl-toggle-Rokt + .collapsible-content-Rokt {
+  max-height: 100%;
+}
+
+.toggle-Rokt:checked + .lbl-toggle-Rokt {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content-Rokt .content-inner-Rokt {
+  background: rgba(207, 209, 209, .2);
+  border-bottom: 1px solid white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+  text-align: left;
+}
 
 /* JCDecaux */
 
