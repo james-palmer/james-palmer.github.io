@@ -100,6 +100,20 @@ hr {
 	}
 }
 
+.demo {
+  background-color: #343A40;
+  background-image: url("Images/IMG/Screenshot 2020-10-13 at 14.45.30.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
 .front {
   background-color: #343A40;
   background-image: url("Images/Background/Lightbulb\ centered.png");
