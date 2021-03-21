@@ -100,23 +100,9 @@ hr {
 	}
 }
 
-.demo {
-  background-color: #343A40;
-  background-image: url("Images/IMG/Screenshot 2020-10-13 at 14.45.30.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
-}
-
 .front {
   background-color: #343A40;
-  background-image: url("Images/Background/Lightbulb-centered.png");
+  background-image: url("Images/Background/Lightbulb-centered.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -240,7 +226,7 @@ footer hr {
   height: 110vh;
   text-align: center;
   vertical-align: left;
-  background: linear-gradient(rgba(52, 58, 64, .5), rgba(52, 58, 64, 1)),url("Images/Background/JP-headshot.jpeg");
+  background: linear-gradient(rgba(52, 58, 64, .5), rgba(52, 58, 64, 1)),url("Images/Background/JP-headshot.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
@@ -262,7 +248,7 @@ footer hr {
   vertical-align: middle;
   min-height: 100vh;
   padding-top: 100px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(52, 58, 64, 1) 60vh), url("Images/Background/JP-headshot.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(52, 58, 64, 1) 60vh), url("Images/Background/JP-headshot.jpg");
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 100% 100%, contain;
@@ -370,7 +356,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 .skills {
   min-height: 80vh;
   padding: 3em 1em;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("Images/Background/books-bookshelves-bookstore-1907785.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("Images/Background/bookshelves.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,7 +381,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
   vertical-align: middle;
   text-align: left;
   background-color:#606b76;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("Images/Background/blur-chart-data-159888\ Flip.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("Images/Background/blur-chart-data.jpg");
   background-position: top right;
   background-repeat: repeat;
   background-size: cover;
