@@ -1,0 +1,92 @@
+.qq-uploader {
+    position: relative;
+    width: 100%;
+}
+.qq-upload-button {
+    display: block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    width: 105px;
+    color: #FFFFFF;
+    text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #033A66;
+	*background-color: #033A66;
+	background-image: -moz-linear-gradient(top, #0088F7, #033A66);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088F7), to(#033A66));
+	background-image: -webkit-linear-gradient(top, #0088F7, #033A66);
+	background-image: -o-linear-gradient(top, #0088F7, #033A66);
+	background-image: linear-gradient(to bottom, #0088F7, #033A66);
+	background-repeat: repeat-x;
+	border-color: #033A66;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088F7', endColorstr='#033A66', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    border-radius: 4px;
+}
+
+
+.qq-upload-button-hover {
+    background: none repeat scroll 0 0 #054375;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.qq-upload-button-focus {
+    outline: 1px dotted black;
+}
+.qq-upload-drop-area {
+    background: none repeat scroll 0 0 #054375;
+    height: 100%;
+    left: 0;
+    min-height: 70px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.qq-upload-drop-area span {
+    display: block;
+    font-size: 16px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.qq-upload-drop-area-active {
+    /*background: none repeat scroll 0 0 #FF7171;*/
+    background: none repeat scroll 0 0 #064f89;
+}
+.qq-upload-list {
+    list-style: disc outside none;
+    margin: 15px 35px;
+    padding: 0;
+}
+.qq-upload-list li {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-failed-text {
+    margin-right: 7px;
+}
+.qq-upload-file {
+}
+.qq-upload-spinner {
+    background: url("") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    vertical-align: text-bottom;
+    width: 15px;
+}
+.qq-upload-size, .qq-upload-cancel {
+    font-size: 11px;
+}
+.qq-upload-failed-text {
+    display: none;
+}
+.qq-upload-fail .qq-upload-failed-text {
+    display: inline;
+}

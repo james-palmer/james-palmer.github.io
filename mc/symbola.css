@@ -1,0 +1,12 @@
+@font-face {
+		    font-family: "Symbola";
+		    font-style: normal;
+		    font-weight: normal;
+		    src: url("") format("embedded-opentype"), 
+                url("") format("woff2"),
+		    	url("") format("woff"), 
+		    	url("") format("truetype"), 
+		    	url("") format("svg");
+		}
+
+.symbola { font-family: Symbola;font-weight: normal !important;margin: 0 .1em;}
