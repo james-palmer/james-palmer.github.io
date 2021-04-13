@@ -184,6 +184,11 @@ gtag('config', 'G-0VMZ0HQPQK');
                                 document.getElementById("popup").style.display = "block";
                                 document.getElementById('iframe').src = "calendars.html";
                          ;}
+
+                         document.getElementById("closePopup").onclick = function(e) {
+                                e.preventDefault();
+                                document.getElementById("popup").style.display = "none";
+                         ;}
                               </script>
 
                           <style>
